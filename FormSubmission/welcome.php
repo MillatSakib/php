@@ -1,7 +1,10 @@
 <html>
 
     <body>
-        Welcome <?php echo $_POST["name"]; ?><br>
-        Your email address is: <?php echo $_POST["email"]; ?>
+        My query is <?php 
+        $name =  $_POST["name"]; 
+        $email = $_POST["email"];
+        echo "INSERT INTO MYDB.TABLE(name,email) VALUES($name , $email)";
+         ?>
 </body>
 </html>
